@@ -7,6 +7,10 @@
 - [22580: From GPT2 to Kimi3, Explained](https://x.com/waterloo_intern/status/2081762065392541951) — Ali, July 27, 2026 · Article. Traces the path from GPT-2 through linear attention and DeltaNet to Kimi K3, focusing on how language models store, update, and retrieve information.
 - [GPT-6 Astra, Looped Transformers, and Hidden Reasoning](https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and) — Sebastian Raschka, September 9, 2026 · Article. Explains how looped transformers reuse weights across passes and examines unconfirmed claims about Astra's architecture and reasoning traces.
 
+### LLM inference and serving
+
+- [第 8 章 推理优化](https://github.com/bojieli/ai-infra-book/blob/main/manuscripts/08-%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96.md) — 《AI Infra Book》书稿章节。分析批处理与请求调度、KV 缓存分页和前缀复用、压缩与卸载、推测解码，以及延迟、吞吐和答案质量之间的取舍。
+
 ### Mechanistic interpretability and neural geometry
 
 - [The World Inside Neural Networks](https://www.goodfire.com/research/the-world-inside-neural-networks) — Geiger et al., May 7, 2026 · Research essay. Introduces neural geometry and shows how following curved representation manifolds can make interventions in a model more precise.
