@@ -21,6 +21,7 @@
   - **我的理解：** Activation space 中存在弯曲的 manifold。线性近似仍然有用，这解释了 LRH、SAE 和简单加减式 steering 为什么能取得一些效果，但它们的成功有边界。若想更深入地理解 activation 并更可靠地控制模型，至少要弄清线性近似何时有效、何时失效；steering 的系数 α 过大时模型表现变差，也可以从这个角度理解。
   - **评价与后续：** 这篇文章更多是在梳理已有论文中的观点，创新性暂时不算强，可以当作科普。继续关注 Goodfire 的后续工作，看看是否会提出更有意思的新方法。
 - [Uncovering Neural Geometry in Vision Models With Block-Sparse Featurizers](https://www.goodfire.com/research/bsf-vision) — Fel et al., July 7, 2026 · Research article. Introduces block-sparse featurizers to find multidimensional concepts in vision-model activations and use them for fine-grained steering.
+- [Modular Cognitive Architecture Emerges in Large Language Models](https://pengrui-han.github.io/LLM_Modularity_Page/) — Han et al., 2026 · Preprint and project page. Uses attribution patching across 46 language, formal, physical, and social reasoning tasks, then neuron ablations, to study functional specialization in LLMs.
 
 ### RL training infrastructure
 
