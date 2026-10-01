@@ -35,53 +35,9 @@ Studies an internal spatial subspace in vision-language models: linear readouts 
 - [What, Where, and How: Probing Spatiotemporal Representations in Video Foundation Models](https://arxiv.org/abs/2609.01551)
 - [SeeSE3: Emergence of 3D Space in Vision Features](https://arxiv.org/abs/2607.14228)
 
-## Other Interesting Recent Works on Interpretability
+## Cognitive Science Inspired Spatial Reasoning Analysis
 
-### [Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs](https://arxiv.org/abs/2609.04753)
-
-*Jeong et al., September 2026 · EMNLP paper*
-
-Studies how labeled reasoning operations appear in hidden representations of chain-of-thought traces; finds the clearest separation in middle layers and tests how prior context shapes these signals.
-
-<p align="center">
-  <a href="https://arxiv.org/html/2609.04753v1/teaser.png"><img src="assets/interpretability/reasoning-operations.png" alt="Reasoning-operation vector scores highlight different parts of a chain-of-thought trace." width="760"></a><br>
-  <sub><em>Reasoning-operation scores across a chain-of-thought trace.</em> · <a href="https://arxiv.org/html/2609.04753v1/teaser.png">Original figure</a></sub>
-</p>
-
-### [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](https://arxiv.org/abs/2607.22575)
-
-*Pink et al., 2026 · ICML paper*
-
-Tests whether long-context LLMs can judge which of two passages came first and compares their distance effect with human order memory. Mechanistic analyses identify a one-dimensional temporal code reinstated at retrieval by a particular attention head; removing that direction weakens order judgments.
-
-<p align="center">
-  <a href="https://arxiv.org/html/2607.22575v1/retrieval-temporal-information.png"><img src="assets/interpretability/temporal-context.png" alt="Retrieval-phase temporal information by attention head in two Llama models." width="690"></a><br>
-  <sub><em>Retrieval-phase temporal information across attention heads.</em> · <a href="https://arxiv.org/html/2607.22575v1/retrieval-temporal-information.png">Original figure</a></sub>
-</p>
-
-### [Revisiting the Platonic Representation Hypothesis: An Aristotelian View](https://arxiv.org/abs/2602.14486)
-
-*Gröger et al., 2026 · ICML paper*
-
-Shows that model width and depth can inflate representation-similarity scores; after calibration, apparent global convergence largely disappears while cross-modal local-neighborhood agreement remains.
-
-<p align="center">
-  <a href="https://arxiv.org/html/2602.14486v2/null-cali-v8.png"><img src="assets/interpretability/platonic-representation.png" alt="Figure 1: Local neighborhood relationships can align across different representation spaces." width="610"></a><br>
-  <sub><em>Local neighborhoods can align across different representation spaces.</em> · <a href="https://arxiv.org/html/2602.14486v2/null-cali-v8.png">Original figure</a></sub>
-</p>
-
-## [SpatialLadder: Progressive Training for Spatial Reasoning in Vision-Language Models](https://arxiv.org/pdf/2510.08531)
-
-*Li et al., October 2025 · Paper*
-
-Introduces SpatialLadder-26k, a 26,610-example dataset spanning object localization and spatial tasks using single images, multiple views, and video. Its three-stage training recipe first grounds objects, then teaches spatial relationships, and finally uses reinforcement learning with verifiable rewards for more complex reasoning. The authors report improved spatial-benchmark performance for their 3B-parameter model.
-
-<p align="center">
-  <a href="https://arxiv.org/html/2510.08531v1/framework.png"><img src="assets/interpretability/spatialladder.png" alt="SpatialLadder&#x27;s three training stages: object grounding, spatial understanding, and reinforcement learning." width="760"></a><br>
-  <sub><em>The three training stages, from object grounding to spatial reasoning.</em> · <a href="https://arxiv.org/html/2510.08531v1/framework.png">Original figure</a></sub>
-</p>
-
-## [Modular Cognitive Architecture Emerges in Large Language Models](https://pengrui-han.github.io/LLM_Modularity_Page/)
+### [Modular Cognitive Architecture Emerges in Large Language Models](https://pengrui-han.github.io/LLM_Modularity_Page/)
 
 *Han et al., 2026 · Preprint and project page*
 
@@ -91,6 +47,23 @@ Uses attribution patching across 46 language, formal, physical, and social reaso
   <a href="https://pengrui-han.github.io/LLM_Modularity_Page/assets/figures/ablation_within_vs_across_3bar.png"><img src="assets/interpretability/modular-cognitive-architecture.png" alt="Bar chart of accuracy drops after within-domain and cross-domain neuron ablations." width="690"></a><br>
   <sub><em>Within-domain neuron ablations affect accuracy more than cross-domain ablations.</em> · <a href="https://pengrui-han.github.io/LLM_Modularity_Page/assets/figures/ablation_within_vs_across_3bar.png">Original figure</a></sub>
 </p>
+
+### [SpatialTree: How Spatial Abilities Branch Out in MLLMs](https://arxiv.org/pdf/2512.20617)
+
+*Xiao et al., December 2025 (revised January 2026) · Preprint*
+
+Proposes a cognitive-science-inspired hierarchy of multimodal-model spatial abilities, from perception and mental mapping to simulation and agentic competence, and evaluates 27 sub-abilities. The authors analyze how skills correlate and transfer under targeted fine-tuning; they also find that extended reasoning can hurt basic perceptual judgments.
+
+<p align="center">
+  <a href="https://arxiv.org/html/2512.20617v2/x1.png"><img src="assets/interpretability/spatialtree.png" alt="SpatialTree diagram showing four levels of spatial ability: perception, mental mapping, mental simulation, and agentic competence." width="700"></a><br>
+  <sub><em>SpatialTree's four-level hierarchy of spatial abilities.</em> · <a href="https://arxiv.org/html/2512.20617v2/x1.png">Original figure</a></sub>
+</p>
+
+## Other Interesting Recent Works on Interpretability
+
+- [Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs](https://arxiv.org/abs/2609.04753)
+- [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](https://arxiv.org/abs/2607.22575)
+- [Revisiting the Platonic Representation Hypothesis: An Aristotelian View](https://arxiv.org/abs/2602.14486)
 
 ## [Uncovering Neural Geometry in Vision Models With Block-Sparse Featurizers](https://www.goodfire.com/research/bsf-vision)
 
