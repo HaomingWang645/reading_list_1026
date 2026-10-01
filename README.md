@@ -8,10 +8,15 @@
 - [GPT-6 Astra, Looped Transformers, and Hidden Reasoning](https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and) — Sebastian Raschka, September 9, 2026 · Article. Explains how looped transformers reuse weights across passes and examines unconfirmed claims about Astra's architecture and reasoning traces.
 - [Modern LLM Notebook](https://github.com/walkinglabs/modern-llm-notebook) — WalkingLabs · Open course with PyTorch notebooks and scripts. Builds from tokenization and data preparation through small-model pretraining and supervised fine-tuning, with modules on MoE, tool calling, post-training, quantization, and inference. Some later recipes are still in development.
 
+### GPU programming and CUDA
+
+- [How do CUDA Kernels work?](https://outcomeschool.com/blog/how-do-cuda-kernels-work) — Amit Shekhar, September 29, 2026 · Introductory article. Explains threads, blocks, and grids with a vector-add kernel, then covers host/device memory, SMs and warps, memory hierarchy, and when GPU execution helps or hurts.
+
 ### LLM inference and serving
 
 - [第 8 章 推理优化](https://github.com/bojieli/ai-infra-book/blob/main/manuscripts/08-%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96.md) — 《AI Infra Book》书稿章节。分析批处理与请求调度、KV 缓存分页和前缀复用、压缩与卸载、推测解码，以及延迟、吞吐和答案质量之间的取舍。
 - [AirLLM](https://github.com/lyogavin/airllm) — Gavin Li · Open-source inference library. Splits model checkpoints into per-layer files, loads each module onto the GPU just before execution, and releases it afterward. This lowers VRAM requirements but requires substantial disk space and repeated weight transfers; optional compression and adapter training are also supported.
+- [NVIDIA Model Optimizer](https://github.com/NVIDIA/Model-Optimizer) — NVIDIA · Open-source library. Combines quantization, pruning, distillation, sparsity, and speculative decoding to prepare smaller or faster models; exports optimized checkpoints for inference frameworks including TensorRT-LLM, vLLM, and SGLang.
 
 ### World models and spatial intelligence
 
