@@ -1,90 +1,129 @@
-# Interpretability and Neural Geometry Reading List
+# Interpretability and Neural Geometry
 
-This companion to the [main reading list](README.md) brings together its five interpretability entries and five additional papers on video, 3D space, multimodal spatial representations, spatial-reasoning training, and long-context memory. Each entry includes a figure from the original paper or post for a quick first impression.
+A visual reading list on how models represent space, time, concepts, and reasoning. It pairs a short takeaway for each work with a figure from its original paper or post. Select a figure to see the original at full size.
 
-## Entries from the README
+[Back to the main reading list](README.md)
 
-### [Revisiting the Platonic Representation Hypothesis: An Aristotelian View](https://arxiv.org/abs/2602.14486)
 
-Gröger et al., 2026 · ICML paper. Shows that model width and depth can inflate representation-similarity scores; after calibration, apparent global convergence largely disappears while cross-modal local-neighborhood agreement remains.
+## [The World Inside Neural Networks](https://www.goodfire.com/research/the-world-inside-neural-networks)
 
-![Figure 1: Local neighborhood relationships can align across different representation spaces.](assets/interpretability/platonic-representation.png)
+*Geiger et al., May 7, 2026 · Research essay*
 
-*Figure 1 illustrates the paper's local-alignment hypothesis. [Original figure](https://arxiv.org/html/2602.14486v2/null-cali-v8.png).*
+Introduces neural geometry and shows how following curved representation manifolds can make interventions in a model more precise.
 
-### [The World Inside Neural Networks](https://www.goodfire.com/research/the-world-inside-neural-networks)
+<p align="center">
+  <a href="https://static.goodfire.ai/neural-geometry-agenda/representation-computation-behavior.webp"><img src="assets/interpretability/neural-geometry.webp" alt="Diagram showing behavior, computation, and representation as three levels of neural-network analysis." width="680"></a><br>
+  <sub><em>Three levels of analysis: behavior, computation, and representation.</em> · <a href="https://static.goodfire.ai/neural-geometry-agenda/representation-computation-behavior.webp">Original figure</a></sub>
+</p>
 
-Geiger et al., May 7, 2026 · Research essay. Introduces neural geometry and shows how following curved representation manifolds can make interventions in a model more precise.
+> **Reading note.** Activation space contains curved manifolds. Linear approximations remain useful, which helps explain why the linear representation hypothesis, sparse autoencoders, and simple additive steering can work, but their success has limits. To understand and control activations more reliably, we need to know when those approximations hold. Degradation at large steering strengths can also be viewed through this lens.
+>
+> **Follow-up.** This essay mostly synthesizes ideas from earlier papers, so its novelty seems limited for now. It works well as an introduction; follow Goodfire's later work for new methods.
 
-- **My take:** Activation space contains curved manifolds. Linear approximations remain useful, which helps explain why the linear representation hypothesis, sparse autoencoders, and simple additive steering can work, but their success has limits. To understand and control activations more reliably, we need to know when those approximations hold. Degradation at large steering strengths can also be viewed through this lens.
-- **Assessment and follow-up:** This essay mostly synthesizes ideas from earlier papers, so its novelty seems limited for now. It works well as an introduction; follow Goodfire's later work for new methods.
 
-![Structure in the world is reflected in data and may appear as structure in neural representations.](assets/interpretability/neural-geometry.webp)
+## [SpatialLadder: Progressive Training for Spatial Reasoning in Vision-Language Models](https://arxiv.org/pdf/2510.08531)
 
-*The post's illustration connects world structure, training data, and neural representations. [Original figure](https://static.goodfire.ai/neural-geometry-agenda/world-data-neural-networks.webp).*
+*Li et al., October 2025 · Paper*
 
-### [Uncovering Neural Geometry in Vision Models With Block-Sparse Featurizers](https://www.goodfire.com/research/bsf-vision)
+Introduces SpatialLadder-26k, a 26,610-example dataset spanning object localization and spatial tasks using single images, multiple views, and video. Its three-stage training recipe first grounds objects, then teaches spatial relationships, and finally uses reinforcement learning with verifiable rewards for more complex reasoning. The authors report improved spatial-benchmark performance for their 3B-parameter model.
 
-Fel et al., July 7, 2026 · Research article. Introduces block-sparse featurizers to find multidimensional concepts in vision-model activations and use them for fine-grained steering.
+<p align="center">
+  <a href="https://arxiv.org/html/2510.08531v1/framework.png"><img src="assets/interpretability/spatialladder.png" alt="SpatialLadder&#x27;s three training stages: object grounding, spatial understanding, and reinforcement learning." width="760"></a><br>
+  <sub><em>The three training stages, from object grounding to spatial reasoning.</em> · <a href="https://arxiv.org/html/2510.08531v1/framework.png">Original figure</a></sub>
+</p>
 
-![Examples of image regions associated with positions in two learned feature subspaces.](assets/interpretability/block-sparse-featurizers.webp)
 
-*Example feature blocks connect image regions to locations in a learned subspace. [Original figure](https://static.goodfire.ai/bsf-vision/arches-hands.webp).*
+## [What, Where, and How: Probing Spatiotemporal Representations in Video Foundation Models](https://arxiv.org/abs/2609.01551)
 
-### [Modular Cognitive Architecture Emerges in Large Language Models](https://pengrui-han.github.io/LLM_Modularity_Page/)
+*Musa et al., September 2026 · Paper*
 
-Han et al., 2026 · Preprint and project page. Uses attribution patching across 46 language, formal, physical, and social reasoning tasks, then neuron ablations, to study functional specialization in LLMs.
+Probes V-JEPA 2 and VideoMAE-v2 layer by layer for camera motion, intuitive physics, and anomaly detection. Camera motion is strongly decodable in middle-to-later layers, while the tested intuitive-physics probes stay near chance. The authors also examine trajectories of video features and use spline-based latent steering to interpolate camera motion.
 
-![Overview of the four task domains and the attribution-patching pipeline.](assets/interpretability/modular-cognitive-architecture.png)
+<p align="center">
+  <a href="https://arxiv.org/html/2609.01551v1/figures/layerwise_plots/B1_per_property_avg_cv.png"><img src="assets/interpretability/video-foundation-models.png" alt="Layerwise probe performance for camera motion, intuitive physics, and anomaly detection." width="780"></a><br>
+  <sub><em>Camera-motion, intuitive-physics, and anomaly probes across model depth.</em> · <a href="https://arxiv.org/html/2609.01551v1/figures/layerwise_plots/B1_per_property_avg_cv.png">Original figure</a></sub>
+</p>
 
-*Figure 1 lays out the task domains, contrastive examples, and attribution pipeline. [Original figure](https://pengrui-han.github.io/LLM_Modularity_Page/assets/figures/figure1_overview.png).*
 
-### [Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs](https://arxiv.org/abs/2609.04753)
+## [Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs](https://arxiv.org/abs/2609.04753)
 
-Jeong et al., September 2026 · EMNLP paper. Studies how labeled reasoning operations appear in hidden representations of chain-of-thought traces; finds the clearest separation in middle layers and tests how prior context shapes these signals.
+*Jeong et al., September 2026 · EMNLP paper*
 
-![Reasoning-operation vector scores highlight different parts of a chain-of-thought trace.](assets/interpretability/reasoning-operations.png)
+Studies how labeled reasoning operations appear in hidden representations of chain-of-thought traces; finds the clearest separation in middle layers and tests how prior context shapes these signals.
 
-*Figure 1 shows how operation vectors score parts of a reasoning trace. [Original figure](https://arxiv.org/html/2609.04753v1/teaser.png).*
+<p align="center">
+  <a href="https://arxiv.org/html/2609.04753v1/teaser.png"><img src="assets/interpretability/reasoning-operations.png" alt="Reasoning-operation vector scores highlight different parts of a chain-of-thought trace." width="760"></a><br>
+  <sub><em>Reasoning-operation scores across a chain-of-thought trace.</em> · <a href="https://arxiv.org/html/2609.04753v1/teaser.png">Original figure</a></sub>
+</p>
 
-## Additional papers
 
-### [What, Where, and How: Probing Spatiotemporal Representations in Video Foundation Models](https://arxiv.org/abs/2609.01551)
+## [Modular Cognitive Architecture Emerges in Large Language Models](https://pengrui-han.github.io/LLM_Modularity_Page/)
 
-Musa et al., September 2026 · Paper. Probes V-JEPA 2 and VideoMAE-v2 layer by layer for camera motion, intuitive physics, and anomaly detection. Camera motion is strongly decodable in middle-to-later layers, while the tested intuitive-physics probes stay near chance. The authors also examine trajectories of video features and use spline-based latent steering to interpolate camera motion.
+*Han et al., 2026 · Preprint and project page*
 
-![Layerwise probe performance for camera motion, intuitive physics, and anomaly detection.](assets/interpretability/video-foundation-models.png)
+Uses attribution patching across 46 language, formal, physical, and social reasoning tasks, then neuron ablations, to study functional specialization in LLMs.
 
-*Figure 3 compares probe performance across layer depth for the three properties. [Original figure](https://arxiv.org/html/2609.01551v1/figures/layerwise_plots/B1_per_property_avg_cv.png).*
+<p align="center">
+  <a href="https://pengrui-han.github.io/LLM_Modularity_Page/assets/figures/ablation_within_vs_across_3bar.png"><img src="assets/interpretability/modular-cognitive-architecture.png" alt="Bar chart of accuracy drops after within-domain and cross-domain neuron ablations." width="690"></a><br>
+  <sub><em>Within-domain neuron ablations affect accuracy more than cross-domain ablations.</em> · <a href="https://pengrui-han.github.io/LLM_Modularity_Page/assets/figures/ablation_within_vs_across_3bar.png">Original figure</a></sub>
+</p>
 
-### [SeeSE3: Emergence of 3D Space in Vision Features](https://arxiv.org/abs/2607.14228)
 
-Chen et al., July 2026 · Paper. Tests whether vision-feature geometry reflects 3D camera motion in static scenes. The authors compare neighborhoods in feature and pose space, then train a Poincaré Adapter to recover camera-motion geometry from latent displacements; they use the resulting structure for latent-space visual odometry and localization.
+## [S-Space: Exploring Spatial Workspace in Multimodal Models](https://mirros.ai/report/s-space.pdf)
 
-![Camera views, raw vision-feature trajectories, ground-truth camera poses, and trajectories after the adapter.](assets/interpretability/seese3.png)
+*MirroS, September 2026 · Technical report ([interactive post](https://mirros.ai/blog/s-space))*
 
-*Figure 1 contrasts tangled raw features with camera-pose trajectories and adapted features. [Original figure](https://arxiv.org/html/2607.14228v1/figures/teaser_v2.png).*
+Studies an internal spatial subspace in vision-language models: linear readouts from object-token activations track viewer-centered horizontal, vertical, and distance coordinates. Interventions on these coordinates change spatial judgments, and an external coordinate transformation can outperform the model's own perspective-taking answers.
 
-### [S-Space: Exploring Spatial Workspace in Multimodal Models](https://mirros.ai/report/s-space.pdf)
+<p align="center">
+  <a href="https://mirros.ai/media/research/s-space/figure-02/figure-02.svg"><img src="assets/interpretability/s-space.svg" alt="The proposed S-Space workspace connects visual perception, internal spatial representation, and downstream answers." width="680"></a><br>
+  <sub><em>The proposed spatial workspace and earlier evidence from 2D grid worlds.</em> · <a href="https://mirros.ai/media/research/s-space/figure-02/figure-02.svg">Original figure</a></sub>
+</p>
 
-MirroS, September 2026 · Technical report ([interactive post](https://mirros.ai/blog/s-space)). Studies an internal spatial subspace in vision-language models: linear readouts from object-token activations track viewer-centered horizontal, vertical, and distance coordinates. Interventions on these coordinates change spatial judgments, and an external coordinate transformation can outperform the model's own perspective-taking answers.
 
-![The proposed S-Space workspace connects visual perception, internal spatial representation, and downstream answers.](assets/interpretability/s-space.svg)
+## [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](https://arxiv.org/abs/2607.22575)
 
-*Figure 2 sketches the proposed spatial workspace and earlier 2D evidence. [Original figure](https://mirros.ai/media/research/s-space/figure-02/figure-02.svg).*
+*Pink et al., 2026 · ICML paper*
 
-### [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](https://arxiv.org/abs/2607.22575)
+Tests whether long-context LLMs can judge which of two passages came first and compares their distance effect with human order memory. Mechanistic analyses identify a one-dimensional temporal code reinstated at retrieval by a particular attention head; removing that direction weakens order judgments.
 
-Pink et al., 2026 · ICML paper. Tests whether long-context LLMs can judge which of two passages came first and compares their distance effect with human order memory. Mechanistic analyses identify a one-dimensional temporal code reinstated at retrieval by a particular attention head; removing that direction weakens order judgments.
+<p align="center">
+  <a href="https://arxiv.org/html/2607.22575v1/retrieval-temporal-information.png"><img src="assets/interpretability/temporal-context.png" alt="Retrieval-phase temporal information by attention head in two Llama models." width="690"></a><br>
+  <sub><em>Retrieval-phase temporal information across attention heads.</em> · <a href="https://arxiv.org/html/2607.22575v1/retrieval-temporal-information.png">Original figure</a></sub>
+</p>
 
-![Retrieval-phase temporal information by attention head in two Llama models.](assets/interpretability/temporal-context.png)
 
-*Figure 4 maps retrieval-phase temporal information across attention heads and highlights the identified heads. [Original figure](https://arxiv.org/html/2607.22575v1/retrieval-temporal-information.png).*
+## [SeeSE3: Emergence of 3D Space in Vision Features](https://arxiv.org/abs/2607.14228)
 
-### [SpatialLadder: Progressive Training for Spatial Reasoning in Vision-Language Models](https://arxiv.org/pdf/2510.08531)
+*Chen et al., July 2026 · Paper*
 
-Li et al., October 2025 · Paper. Introduces SpatialLadder-26k, a 26,610-example dataset spanning object localization and spatial tasks using single images, multiple views, and video. Its three-stage training recipe first grounds objects, then teaches spatial relationships, and finally uses reinforcement learning with verifiable rewards for more complex reasoning. The authors report improved spatial-benchmark performance for their 3B-parameter model.
+Tests whether vision-feature geometry reflects 3D camera motion in static scenes. The authors compare neighborhoods in feature and pose space, then train a Poincaré Adapter to recover camera-motion geometry from latent displacements; they use the resulting structure for latent-space visual odometry and localization.
 
-![SpatialLadder's three training stages: object grounding, spatial understanding, and reinforcement learning.](assets/interpretability/spatialladder.png)
+<p align="center">
+  <a href="https://arxiv.org/html/2607.14228v1/figures/teaser_v2.png"><img src="assets/interpretability/seese3.png" alt="Camera views, raw vision-feature trajectories, ground-truth camera poses, and trajectories after the adapter." width="820"></a><br>
+  <sub><em>Raw features, camera-pose trajectories, and features after the Poincaré Adapter.</em> · <a href="https://arxiv.org/html/2607.14228v1/figures/teaser_v2.png">Original figure</a></sub>
+</p>
 
-*Figure 3 diagrams the progressive training framework. [Original figure](https://arxiv.org/html/2510.08531v1/framework.png).*
+
+## [Revisiting the Platonic Representation Hypothesis: An Aristotelian View](https://arxiv.org/abs/2602.14486)
+
+*Gröger et al., 2026 · ICML paper*
+
+Shows that model width and depth can inflate representation-similarity scores; after calibration, apparent global convergence largely disappears while cross-modal local-neighborhood agreement remains.
+
+<p align="center">
+  <a href="https://arxiv.org/html/2602.14486v2/null-cali-v8.png"><img src="assets/interpretability/platonic-representation.png" alt="Figure 1: Local neighborhood relationships can align across different representation spaces." width="610"></a><br>
+  <sub><em>Local neighborhoods can align across different representation spaces.</em> · <a href="https://arxiv.org/html/2602.14486v2/null-cali-v8.png">Original figure</a></sub>
+</p>
+
+
+## [Uncovering Neural Geometry in Vision Models With Block-Sparse Featurizers](https://www.goodfire.com/research/bsf-vision)
+
+*Fel et al., July 7, 2026 · Research article*
+
+Introduces block-sparse featurizers to find multidimensional concepts in vision-model activations and use them for fine-grained steering.
+
+<p align="center">
+  <a href="https://static.goodfire.ai/bsf-vision/arches-hands.webp"><img src="assets/interpretability/block-sparse-featurizers.webp" alt="Examples of image regions associated with positions in two learned feature subspaces." width="730"></a><br>
+  <sub><em>Image regions and positions in learned multidimensional feature blocks.</em> · <a href="https://static.goodfire.ai/bsf-vision/arches-hands.webp">Original figure</a></sub>
+</p>
