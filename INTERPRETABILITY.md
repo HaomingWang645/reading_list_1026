@@ -34,6 +34,9 @@ Studies an internal spatial subspace in vision-language models: linear readouts 
 
 - [What, Where, and How: Probing Spatiotemporal Representations in Video Foundation Models](https://arxiv.org/abs/2609.01551)
 - [SeeSE3: Emergence of 3D Space in Vision Features](https://arxiv.org/abs/2607.14228)
+- [Uncovering Neural Geometry in Vision Models With Block-Sparse Featurizers](https://www.goodfire.com/research/bsf-vision)
+- [Linear Mechanisms for Spatiotemporal Reasoning in Vision Language Models](https://arxiv.org/abs/2601.12626)
+- [Beyond Semantics: Rediscovering Spatial Awareness in Vision-Language Models](https://arxiv.org/abs/2503.17349)
 
 ## Cognitive Science Inspired Spatial Reasoning Analysis
 
@@ -64,14 +67,8 @@ Proposes a cognitive-science-inspired hierarchy of multimodal-model spatial abil
 - [Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs](https://arxiv.org/abs/2609.04753)
 - [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](https://arxiv.org/abs/2607.22575)
 - [Revisiting the Platonic Representation Hypothesis: An Aristotelian View](https://arxiv.org/abs/2602.14486)
-
-## [Uncovering Neural Geometry in Vision Models With Block-Sparse Featurizers](https://www.goodfire.com/research/bsf-vision)
-
-*Fel et al., July 7, 2026 · Research article*
-
-Introduces block-sparse featurizers to find multidimensional concepts in vision-model activations and use them for fine-grained steering.
-
-<p align="center">
-  <a href="https://static.goodfire.ai/bsf-vision/arches-hands.webp"><img src="assets/interpretability/block-sparse-featurizers.webp" alt="Examples of image regions associated with positions in two learned feature subspaces." width="730"></a><br>
-  <sub><em>Image regions and positions in learned multidimensional feature blocks.</em> · <a href="https://static.goodfire.ai/bsf-vision/arches-hands.webp">Original figure</a></sub>
-</p>
+- [Does Object Binding Naturally Emerge in Large Pretrained Vision Transformers?](https://arxiv.org/abs/2510.24709)
+- [The Geometry of Reasoning: Flowing Logics in Representation Space](https://arxiv.org/abs/2510.09782)
+- [Mixing Mechanisms: How Language Models Retrieve Bound Entities In-Context](https://arxiv.org/abs/2510.06182)
+- [From Tokens to Lattices: Emergent Lattice Structures in Language Models](https://arxiv.org/abs/2504.08778)
+- [Talking Heads: Understanding Inter-layer Communication in Transformer Language Models](https://arxiv.org/abs/2406.09519)
