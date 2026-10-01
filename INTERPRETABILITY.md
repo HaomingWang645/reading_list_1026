@@ -47,8 +47,8 @@ Studies an internal spatial subspace in vision-language models: linear readouts 
 Uses attribution patching across 46 language, formal, physical, and social reasoning tasks, then neuron ablations, to study functional specialization in LLMs.
 
 <p align="center">
-  <a href="https://pengrui-han.github.io/LLM_Modularity_Page/assets/figures/ablation_within_vs_across_3bar.png"><img src="assets/interpretability/modular-cognitive-architecture.png" alt="Bar chart of accuracy drops after within-domain and cross-domain neuron ablations." width="690"></a><br>
-  <sub><em>Within-domain neuron ablations affect accuracy more than cross-domain ablations.</em> · <a href="https://pengrui-han.github.io/LLM_Modularity_Page/assets/figures/ablation_within_vs_across_3bar.png">Original figure</a></sub>
+  <a href="https://pengrui-han.github.io/LLM_Modularity_Page/hero_widget.html"><img src="assets/interpretability/modular-cognitive-architecture.png" alt="Interactive illustration of a physics prompt beside a highlighted human brain network and a schematic language-model circuit." width="800" style="max-width: 100%; height: auto;"></a><br>
+  <sub><em>Physics prompt, brain network, and schematic model circuit. This is an illustration, not a results figure.</em> · <a href="https://pengrui-han.github.io/LLM_Modularity_Page/hero_widget.html">Original interactive demo</a></sub>
 </p>
 
 ### [SpatialTree: How Spatial Abilities Branch Out in MLLMs](https://arxiv.org/pdf/2512.20617)
