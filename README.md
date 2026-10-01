@@ -2,10 +2,11 @@
 
 ## AI & Machine Learning
 
-### LLM architecture
+### LLM architecture and training
 
 - [22580: From GPT2 to Kimi3, Explained](https://x.com/waterloo_intern/status/2081762065392541951) — Ali, July 27, 2026 · Article. Traces the path from GPT-2 through linear attention and DeltaNet to Kimi K3, focusing on how language models store, update, and retrieve information.
 - [GPT-6 Astra, Looped Transformers, and Hidden Reasoning](https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and) — Sebastian Raschka, September 9, 2026 · Article. Explains how looped transformers reuse weights across passes and examines unconfirmed claims about Astra's architecture and reasoning traces.
+- [Modern LLM Notebook](https://github.com/walkinglabs/modern-llm-notebook) — WalkingLabs · Open course with PyTorch notebooks and scripts. Builds from tokenization and data preparation through small-model pretraining and supervised fine-tuning, with modules on MoE, tool calling, post-training, quantization, and inference. Some later recipes are still in development.
 
 ### LLM inference and serving
 
@@ -35,6 +36,7 @@
 
 - [RL is Everything, Everywhere, All at Once](https://skypilot.ai/blog/rl-everything) — Ishan Kaul, September 10, 2026 · Blog post. Surveys the infrastructure behind large RL post-training runs: rollout inference, sandboxes, distributed training, weight synchronization, scheduling, and failure recovery.
 
-### Agent infrastructure
+### Agent infrastructure and harness engineering
 
 - [The Next Scaling Problem](https://tetral.ai/blog/the-next-scaling-problem/) — Yang Li, September 6, 2026 · Blog post. Describes a cloud agent architecture that separates the durable agent runtime and history from disposable execution environments so each can scale and recover independently.
+- [Learn Harness Engineering](https://walkinglabs.github.io/learn-harness-engineering/en/) — WalkingLabs · Open course. Lectures, projects, and templates for building reliable coding-agent harnesses, covering environment design, state across sessions, rules, verification, and observability.
