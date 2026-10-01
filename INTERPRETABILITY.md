@@ -58,8 +58,8 @@ Uses attribution patching across 46 language, formal, physical, and social reaso
 Proposes a cognitive-science-inspired hierarchy of multimodal-model spatial abilities, from perception and mental mapping to simulation and agentic competence, and evaluates 27 sub-abilities. The authors analyze how skills correlate and transfer under targeted fine-tuning; they also find that extended reasoning can hurt basic perceptual judgments.
 
 <p align="center">
-  <a href="https://arxiv.org/html/2512.20617v2/x1.png"><img src="assets/interpretability/spatialtree.png" alt="SpatialTree diagram showing four levels of spatial ability: perception, mental mapping, mental simulation, and agentic competence." width="700"></a><br>
-  <sub><em>SpatialTree's four-level hierarchy of spatial abilities.</em> · <a href="https://arxiv.org/html/2512.20617v2/x1.png">Original figure</a></sub>
+  <a href="https://spatialtree.github.io/#motivation"><img src="assets/interpretability/spatialtree.png" alt="A timeline of four spatial ability stages: perception, mental mapping, mental simulation, and spatial action, with a short description of each." width="820" style="max-width: 100%; height: auto;"></a><br>
+  <sub><em>Spatial abilities develop from perception and mapping through simulation to action.</em> · <a href="https://spatialtree.github.io/#motivation">Original project-page figure</a></sub>
 </p>
 
 ## Other Interesting Recent Works on Interpretability
