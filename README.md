@@ -25,6 +25,10 @@
 - [Uncovering Neural Geometry in Vision Models With Block-Sparse Featurizers](https://www.goodfire.com/research/bsf-vision) — Fel et al., July 7, 2026 · Research article. Introduces block-sparse featurizers to find multidimensional concepts in vision-model activations and use them for fine-grained steering.
 - [Modular Cognitive Architecture Emerges in Large Language Models](https://pengrui-han.github.io/LLM_Modularity_Page/) — Han et al., 2026 · Preprint and project page. Uses attribution patching across 46 language, formal, physical, and social reasoning tasks, then neuron ablations, to study functional specialization in LLMs.
 
+### Reinforcement learning and post-training
+
+- [Hands-On Modern RL](https://github.com/walkinglabs/hands-on-modern-rl) — WalkingLabs · Open course and book. A practical path from MDPs, DQN, and PPO to RLHF, DPO, GRPO, RLVR, and agentic RL, with code and notebooks. The maintainers note that some material is still being reviewed.
+
 ### RL training infrastructure
 
 - [RL is Everything, Everywhere, All at Once](https://skypilot.ai/blog/rl-everything) — Ishan Kaul, September 10, 2026 · Blog post. Surveys the infrastructure behind large RL post-training runs: rollout inference, sandboxes, distributed training, weight synchronization, scheduling, and failure recovery.
