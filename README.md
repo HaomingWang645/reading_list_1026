@@ -11,6 +11,7 @@
 ### GPU programming and CUDA
 
 - [How do CUDA Kernels work?](https://outcomeschool.com/blog/how-do-cuda-kernels-work) — Amit Shekhar, September 29, 2026 · Introductory article. Explains threads, blocks, and grids with a vector-add kernel, then covers host/device memory, SMs and warps, memory hierarchy, and when GPU execution helps or hurts.
+- [CUDA from zero to hero #1](https://x.com/goyal__pramod/status/2103565642800431533) — Pramod Goyal, September 25, 2026 · [X article](https://x.com/i/article/2103559794980470785). Introductory notes on GPU hardware and CUDA execution, followed by a naive matrix-multiplication kernel that illustrates row-major storage, thread indexing, and grid sizing. The author plans to extend the series with performance bottlenecks and optimization.
 
 ### LLM inference and serving
 
