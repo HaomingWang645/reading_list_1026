@@ -12,9 +12,10 @@
 - [第 8 章 推理优化](https://github.com/bojieli/ai-infra-book/blob/main/manuscripts/08-%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96.md) — 《AI Infra Book》书稿章节。分析批处理与请求调度、KV 缓存分页和前缀复用、压缩与卸载、推测解码，以及延迟、吞吐和答案质量之间的取舍。
 - [AirLLM](https://github.com/lyogavin/airllm) — Gavin Li · Open-source inference library. Splits model checkpoints into per-layer files, loads each module onto the GPU just before execution, and releases it afterward. This lowers VRAM requirements but requires substantial disk space and repeated weight transfers; optional compression and adapter training are also supported.
 
-### World models
+### World models and spatial intelligence
 
 - [CIS 6280 · World Models — Resources](https://www.cis.upenn.edu/~cis6280/#resources) — University of Pennsylvania, Fall 2026 · Course resource collection. Curated essays, tutorials, talks, and system demos on world models, alongside a course covering reinforcement learning, video and 3D, robotics, and agents.
+- [空间记忆：智能系统缺失的认知底座](https://luliu.me/posts/kong-jian-ji-yi-zhi-neng-xi-tong-que-shi-de-ren-zhi-di-zuo/) — 刘露、张彦峰，2026-05-05 · 长文。主张物理世界智能需要持续维护可查询、可校准、可追溯的时空状态，梳理认知地图、感知—认知—记忆架构、技术路线与评测缺口。
 
 ### Mechanistic interpretability and neural geometry
 
