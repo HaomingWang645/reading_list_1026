@@ -7,6 +7,7 @@
 - [22580: From GPT2 to Kimi3, Explained](https://x.com/waterloo_intern/status/2081762065392541951) — Ali, July 27, 2026 · Article. Traces the path from GPT-2 through linear attention and DeltaNet to Kimi K3, focusing on how language models store, update, and retrieve information.
 - [GPT-6 Astra, Looped Transformers, and Hidden Reasoning](https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and) — Sebastian Raschka, September 9, 2026 · Article. Explains how looped transformers reuse weights across passes and examines unconfirmed claims about Astra's architecture and reasoning traces.
 - [Modern LLM Notebook](https://github.com/walkinglabs/modern-llm-notebook) — WalkingLabs · Open course with PyTorch notebooks and scripts. Builds from tokenization and data preparation through small-model pretraining and supervised fine-tuning, with modules on MoE, tool calling, post-training, quantization, and inference. Some later recipes are still in development.
+- [Why Diffusion Language Models Are the Future](https://dimitri.ml/posts/why-diffusion-language-models-are-the-future/) — Dimitri von Rütte, February 27, 2026 · Opinion essay. Argues that discrete diffusion LMs may benefit from flexible generation order and repeated training on limited data, with a focus on uniform diffusion that can revise tokens. Explores data-informed noise, learning when and how to revise, and adaptive sampling; the proposed large-scale advantages remain speculative.
 
 ### GPU programming and CUDA
 
