@@ -1,8 +1,4 @@
-# Interpretability and Neural Geometry
 
-A visual reading list on how models represent space, time, concepts, and reasoning. Selected entries include a short takeaway and a figure from the original paper or post. Select a figure to see the original at full size.
-
-[Back to the main reading list](README.md)
 
 ## [The World Inside Neural Networks](https://www.goodfire.com/research/the-world-inside-neural-networks)
 
