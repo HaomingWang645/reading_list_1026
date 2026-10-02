@@ -35,6 +35,7 @@ Studies an internal spatial subspace in vision-language models: linear readouts 
 - [What, Where, and How: Probing Spatiotemporal Representations in Video Foundation Models](https://arxiv.org/abs/2609.01551)
 - [SeeSE3: Emergence of 3D Space in Vision Features](https://arxiv.org/abs/2607.14228)
 - [Uncovering Neural Geometry in Vision Models With Block-Sparse Featurizers](https://www.goodfire.com/research/bsf-vision)
+- [Interpreting Physics in Video World Models](https://arxiv.org/abs/2602.07050)
 - [Linear Mechanisms for Spatiotemporal Reasoning in Vision Language Models](https://arxiv.org/abs/2601.12626)
 - [Beyond Semantics: Rediscovering Spatial Awareness in Vision-Language Models](https://arxiv.org/abs/2503.17349)
 
@@ -67,6 +68,7 @@ Proposes a cognitive-science-inspired hierarchy of multimodal-model spatial abil
 - [Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs](https://arxiv.org/abs/2609.04753)
 - [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](https://arxiv.org/abs/2607.22575)
 - [Revisiting the Platonic Representation Hypothesis: An Aristotelian View](https://arxiv.org/abs/2602.14486)
+- [Global Geometry Is Not Enough for Vision Representations](https://arxiv.org/abs/2602.03282)
 - [Does Object Binding Naturally Emerge in Large Pretrained Vision Transformers?](https://arxiv.org/abs/2510.24709)
 - [The Geometry of Reasoning: Flowing Logics in Representation Space](https://arxiv.org/abs/2510.09782)
 - [Mixing Mechanisms: How Language Models Retrieve Bound Entities In-Context](https://arxiv.org/abs/2510.06182)
