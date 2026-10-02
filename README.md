@@ -23,6 +23,10 @@
 - [vLLM's beautiful architecture, explained](https://x.com/attharrva15/status/2103918757446062165) — Atharva, September 26, 2026 · [X article](https://x.com/i/article/2103822119595548672). An introductory account of prefill versus decode, growing KV caches, and how PagedAttention, continuous batching, and scheduling help serve requests of different lengths efficiently.
 - [KV, Prefix, Prompt and Semantic Caching in LLMs, clearly explained](https://x.com/_avichawla/status/2093265776266637739) — Avi Chawla, August 28, 2026 · [X article](https://x.com/i/article/2093210840468189184). Compares four caching layers by what they store and when they can be reused, with code examples and production pitfalls. Explains why exact prefix reuse can fail and why embedding-based semantic cache hits require correctness checks.
 
+### LLM memory and knowledge integration
+
+- [MeMo: Memory as a Model](https://arxiv.org/abs/2605.15156) — Quek et al., May 2026 · Preprint. Trains a dedicated memory model on questions and answers synthesized from a corpus while keeping the answering LLM frozen; at inference, the LLM queries that model through targeted sub-questions. Evaluated on BrowseComp-Plus, NarrativeQA, and MuSiQue, including tests with distractor documents. Each new corpus requires upfront training, and memory capacity is limited by the dedicated model's size.
+
 ### World models and spatial intelligence
 
 - [CIS 6280 · World Models — Resources](https://www.cis.upenn.edu/~cis6280/#resources) — University of Pennsylvania, Fall 2026 · Course resource collection. Curated essays, tutorials, talks, and system demos on world models, alongside a course covering reinforcement learning, video and 3D, robotics, and agents.
