@@ -43,6 +43,10 @@
 - [Modular Cognitive Architecture Emerges in Large Language Models](https://pengrui-han.github.io/LLM_Modularity_Page/) — Han et al., 2026 · Preprint and project page. Uses attribution patching across 46 language, formal, physical, and social reasoning tasks, then neuron ablations, to study functional specialization in LLMs.
 - [Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs](https://arxiv.org/pdf/2609.04753) — Jeong et al., September 2026 · EMNLP paper. Studies how labeled reasoning operations appear in hidden representations of chain-of-thought traces; finds the clearest separation in middle layers and tests how prior context shapes these signals.
 
+### AI safety and monitoring
+
+- [The fragile foundations of CoT monitoring](https://web.stanford.edu/~cgpotts/blog/cot/) — Christopher Potts, July 27, 2026 (updated August 9) · Workshop reflection. Argues that chain-of-thought is useful but fragile as a safety signal because models may compute without verbalizing it or produce unfaithful reasoning traces. Advocates studying internal states and action records; the update questions whether CoT would have added useful signal in a cyber incident.
+
 ### Reinforcement learning and post-training
 
 - [Hands-On Modern RL](https://github.com/walkinglabs/hands-on-modern-rl) — WalkingLabs · Open course and book. A practical path from MDPs, DQN, and PPO to RLHF, DPO, GRPO, RLVR, and agentic RL, with code and notebooks. The maintainers note that some material is still being reviewed.
