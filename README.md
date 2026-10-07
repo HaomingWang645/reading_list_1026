@@ -2,20 +2,28 @@
 
 ## AI & Machine Learning
 
+### Math and ML learning resources
+
+- [3Blue1Brown video source code](https://github.com/3b1b/videos) — 3Blue1Brown · Manim scene repository. Source code for the channel's explanatory math videos, organized by year; older scenes may require earlier Manim versions.
+- [Deep-ML](https://www.deep-ml.com/) — Interactive ML practice platform. Browser-based Python problems with test feedback, guided paths, labs, projects, and math exercises spanning ML fundamentals, deep learning, computer vision, NLP, reinforcement learning, and CUDA.
+
 ### LLM architecture and training
 
+- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) — Jay Alammar, June 27, 2018 · Visual tutorial. Walks through the original encoder-decoder Transformer, including embeddings, positional encoding, self-attention, multi-head attention, and decoding.
 - [22580: From GPT2 to Kimi3, Explained](https://x.com/waterloo_intern/status/2081762065392541951) — Ali, July 27, 2026 · Article. Traces the path from GPT-2 through linear attention and DeltaNet to Kimi K3, focusing on how language models store, update, and retrieve information.
 - [GPT-6 Astra, Looped Transformers, and Hidden Reasoning](https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and) — Sebastian Raschka, September 9, 2026 · Article. Explains how looped transformers reuse weights across passes and examines unconfirmed claims about Astra's architecture and reasoning traces.
 - [Modern LLM Notebook](https://github.com/walkinglabs/modern-llm-notebook) — WalkingLabs · Open course with PyTorch notebooks and scripts. Builds from tokenization and data preparation through small-model pretraining and supervised fine-tuning, with modules on MoE, tool calling, post-training, quantization, and inference. Some later recipes are still in development.
 - [Why Diffusion Language Models Are the Future](https://dimitri.ml/posts/why-diffusion-language-models-are-the-future/) — Dimitri von Rütte, February 27, 2026 · Opinion essay. Argues that discrete diffusion LMs may benefit from flexible generation order and repeated training on limited data, with a focus on uniform diffusion that can revise tokens. Explores data-informed noise, learning when and how to revise, and adaptive sampling; the proposed large-scale advantages remain speculative.
 
-### GPU programming and CUDA
+### GPU systems and CUDA
 
+- [How to Think About GPUs](https://jax-ml.github.io/scaling-book/gpus/) — Austin et al., August 18, 2025 · Book chapter. Explains NVIDIA GPU compute and memory, node and cross-node networking, collectives, and roofline limits for data, tensor, expert, and pipeline parallelism in LLM training.
 - [How do CUDA Kernels work?](https://outcomeschool.com/blog/how-do-cuda-kernels-work) — Amit Shekhar, September 29, 2026 · Introductory article. Explains threads, blocks, and grids with a vector-add kernel, then covers host/device memory, SMs and warps, memory hierarchy, and when GPU execution helps or hurts.
 - [CUDA from zero to hero #1](https://x.com/goyal__pramod/status/2103565642800431533) — Pramod Goyal, September 25, 2026 · [X article](https://x.com/i/article/2103559794980470785). Introductory notes on GPU hardware and CUDA execution, followed by a naive matrix-multiplication kernel that illustrates row-major storage, thread indexing, and grid sizing. The author plans to extend the series with performance bottlenecks and optimization.
 
 ### LLM inference and serving
 
+- [A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization) — Maarten Grootendorst, July 22, 2024 · Illustrated tutorial. Builds intuition for numeric formats, symmetric and asymmetric scaling, post-training quantization, GGUF, quantization-aware training, and low-bit LLM methods through extensive visuals.
 - [第 8 章 推理优化](https://github.com/bojieli/ai-infra-book/blob/main/manuscripts/08-%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96.md) — 《AI Infra Book》书稿章节。分析批处理与请求调度、KV 缓存分页和前缀复用、压缩与卸载、推测解码，以及延迟、吞吐和答案质量之间的取舍。
 - [AirLLM](https://github.com/lyogavin/airllm) — Gavin Li · Open-source inference library. Splits model checkpoints into per-layer files, loads each module onto the GPU just before execution, and releases it afterward. This lowers VRAM requirements but requires substantial disk space and repeated weight transfers; optional compression and adapter training are also supported.
 - [NVIDIA Model Optimizer](https://github.com/NVIDIA/Model-Optimizer) — NVIDIA · Open-source library. Combines quantization, pruning, distillation, sparsity, and speculative decoding to prepare smaller or faster models; exports optimized checkpoints for inference frameworks including TensorRT-LLM, vLLM, and SGLang.
