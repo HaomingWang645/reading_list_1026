@@ -69,3 +69,9 @@
 
 - [The Next Scaling Problem](https://tetral.ai/blog/the-next-scaling-problem/) — Yang Li, September 6, 2026 · Blog post. Describes a cloud agent architecture that separates the durable agent runtime and history from disposable execution environments so each can scale and recover independently.
 - [Learn Harness Engineering](https://walkinglabs.github.io/learn-harness-engineering/en/) — WalkingLabs · Open course. Lectures, projects, and templates for building reliable coding-agent harnesses, covering environment design, state across sessions, rules, verification, and observability.
+
+## Software engineering
+
+### System design and distributed systems
+
+- [System Design Notes](https://github.com/liquidslr/system-design-notes) — liquidslr · Open notes based on Alex Xu's *System Design Interview* volumes 1 and 2. Covers scaling and back-of-the-envelope estimation, then design cases such as rate limiting, consistent hashing, key-value stores, message queues, object storage, and payments. The notes are a work in progress.
