@@ -23,6 +23,7 @@
 
 ### LLM inference and serving
 
+- [Inference Engineering](https://x.com/techNmak/status/2107678022094790933) — Tech with Mak, October 7, 2026 · X explainer and infographic. Surveys prefill versus decode, KV-cache and attention optimizations, batching and scheduling, quantization, speculative decoding, and multi-GPU serving. Connects TTFT, inter-token latency, throughput, and goodput to practical bottleneck diagnosis; a conceptual overview rather than a benchmark.
 - [A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization) — Maarten Grootendorst, July 22, 2024 · Illustrated tutorial. Builds intuition for numeric formats, symmetric and asymmetric scaling, post-training quantization, GGUF, quantization-aware training, and low-bit LLM methods through extensive visuals.
 - [第 8 章 推理优化](https://github.com/bojieli/ai-infra-book/blob/main/manuscripts/08-%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96.md) — 《AI Infra Book》书稿章节。分析批处理与请求调度、KV 缓存分页和前缀复用、压缩与卸载、推测解码，以及延迟、吞吐和答案质量之间的取舍。
 - [AirLLM](https://github.com/lyogavin/airllm) — Gavin Li · Open-source inference library. Splits model checkpoints into per-layer files, loads each module onto the GPU just before execution, and releases it afterward. This lowers VRAM requirements but requires substantial disk space and repeated weight transfers; optional compression and adapter training are also supported.
