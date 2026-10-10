@@ -4,6 +4,7 @@
 
 ### Math and ML learning resources
 
+- [CS4780/CS5780: Machine Learning for Intelligent Systems — Lecture Notes](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/) — Kilian Weinberger, Cornell University, Fall 2018 · Course notes. Twenty-one lectures introduce core machine learning methods from k-nearest neighbors, logistic regression, optimization, and SVMs through kernels, Gaussian processes, trees, ensembles, and neural networks; the course also links to video lectures.
 - [3Blue1Brown video source code](https://github.com/3b1b/videos) — 3Blue1Brown · Manim scene repository. Source code for the channel's explanatory math videos, organized by year; older scenes may require earlier Manim versions.
 - [Deep-ML](https://www.deep-ml.com/) — Interactive ML practice platform. Browser-based Python problems with test feedback, guided paths, labs, projects, and math exercises spanning ML fundamentals, deep learning, computer vision, NLP, reinforcement learning, and CUDA.
 
