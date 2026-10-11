@@ -59,6 +59,7 @@
 
 ### Reinforcement learning and post-training
 
+- [CS234: Reinforcement Learning — Lecture Materials](https://web.stanford.edu/class/cs234/modules.html) — Emma Brunskill, Stanford University, Winter 2026 · Course slides and supporting readings. Covers MDP planning, policy evaluation, Q-learning, policy gradients, imitation and offline RL, learning from human input, exploration, and Monte Carlo tree search.
 - [Hands-On Modern RL](https://github.com/walkinglabs/hands-on-modern-rl) — WalkingLabs · Open course and book. A practical path from MDPs, DQN, and PPO to RLHF, DPO, GRPO, RLVR, and agentic RL, with code and notebooks. The maintainers note that some material is still being reviewed.
 - [On-Policy Self-Distillation without Any Supervision](https://alphaxiv.org/abs/2608.06296) — Li et al., August 2026 · [Preprint](https://arxiv.org/abs/2608.06296). Introduces u-OPSD: majority voting over a model's own rollouts creates a pseudo-solution, which guides distillation on disagreeing completions without external labels or a stronger teacher. Reports improvements on Qwen3 mathematical reasoning benchmarks; the approach currently relies on answers that can be extracted and compared.
 
