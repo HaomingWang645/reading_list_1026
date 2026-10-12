@@ -76,6 +76,7 @@
 
 ### Agent infrastructure and harness engineering
 
+- [CS2680: Modern AI Systems — Agents and System Optimizations](https://cs2680.seas.harvard.edu/) — Juncheng Yang, Harvard University, Fall 2026 · Course site with a syllabus, readings, and staged assignments. Follows a coding agent from harness design and evaluation through self-hosted model serving and full-stack optimization, covering scheduling, KV-cache reuse, routing, quantization, and speculative decoding. Later course materials are still scheduled for release.
 - [The Next Scaling Problem](https://tetral.ai/blog/the-next-scaling-problem/) — Yang Li, September 6, 2026 · Blog post. Describes a cloud agent architecture that separates the durable agent runtime and history from disposable execution environments so each can scale and recover independently.
 - [Learn Harness Engineering](https://walkinglabs.github.io/learn-harness-engineering/en/) — WalkingLabs · Open course. Lectures, projects, and templates for building reliable coding-agent harnesses, covering environment design, state across sessions, rules, verification, and observability.
 
