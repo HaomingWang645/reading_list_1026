@@ -68,6 +68,10 @@
 - [RL is Everything, Everywhere, All at Once](https://skypilot.ai/blog/rl-everything) — Ishan Kaul, September 10, 2026 · Blog post. Surveys the infrastructure behind large RL post-training runs: rollout inference, sandboxes, distributed training, weight synchronization, scheduling, and failure recovery.
 - [The ultimate guide to multi-harness RL](https://huggingface.co/spaces/FineEnvs/multi-harness-rl#introduction) — Kolavi et al., October 1, 2026 · Interactive guide and experiment. Trains coding agents across existing harnesses using an OpenEnv capture proxy for exact tokens and log probabilities, Harbor for tasks and sandboxes, and TRL for optimization. Reports LFM2.5-2.6B pass@1 rising from 42.2% to 54.2% across four harnesses on SmolDataEnvs; the study uses one task family and one seed per setup.
 
+### AI agents and applications
+
+- [CS294/194-196: Agentic AI](https://rdi.berkeley.edu/agentic-ai/f25) — Dawn Song, UC Berkeley, Fall 2025 · Course syllabus with slides, recordings, and supplemental readings. Covers LLM agents, system design, verifiable post-training, evaluation, multi-agent systems, scientific discovery, deployment, embodiment, and agent safety and security.
+
 ### Agent infrastructure and harness engineering
 
 - [The Next Scaling Problem](https://tetral.ai/blog/the-next-scaling-problem/) — Yang Li, September 6, 2026 · Blog post. Describes a cloud agent architecture that separates the durable agent runtime and history from disposable execution environments so each can scale and recover independently.
