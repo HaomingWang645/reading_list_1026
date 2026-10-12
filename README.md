@@ -81,6 +81,10 @@
 - [The Next Scaling Problem](https://tetral.ai/blog/the-next-scaling-problem/) — Yang Li, September 6, 2026 · Blog post. Describes a cloud agent architecture that separates the durable agent runtime and history from disposable execution environments so each can scale and recover independently.
 - [Learn Harness Engineering](https://walkinglabs.github.io/learn-harness-engineering/en/) — WalkingLabs · Open course. Lectures, projects, and templates for building reliable coding-agent harnesses, covering environment design, state across sessions, rules, verification, and observability.
 
+### AI and research practice
+
+- [The Future of Research in the Age of AI](https://pierremarion23.github.io/thoughts/2026-10-01.html) — Pierre Marion, October 1, 2026 · Opinion essay. Explores a conditional future in which LLMs accelerate mathematical and computer-science problem solving while human researchers remain responsible for choosing questions, interpreting results, and sharing knowledge. Advocates less publication pressure, skill-preserving collaboration, formal verification, and stronger researcher training; its predictions rest on four explicit hypotheses.
+
 ## Software engineering
 
 ### System design and distributed systems
