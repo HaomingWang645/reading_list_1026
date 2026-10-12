@@ -65,6 +65,7 @@
 
 ### RL training infrastructure
 
+- [rLLM](https://github.com/rllm-org/rllm) — rLLM team · Open-source framework for RL post-training of language agents. Runs existing harnesses in local or remote sandboxes, captures rollout token IDs and log probabilities through a model gateway, and uses user-defined evaluators to score episodes before policy updates with backends including verl, Tinker, and Fireworks. The same agent code supports evaluation and training.
 - [RL is Everything, Everywhere, All at Once](https://skypilot.ai/blog/rl-everything) — Ishan Kaul, September 10, 2026 · Blog post. Surveys the infrastructure behind large RL post-training runs: rollout inference, sandboxes, distributed training, weight synchronization, scheduling, and failure recovery.
 - [The ultimate guide to multi-harness RL](https://huggingface.co/spaces/FineEnvs/multi-harness-rl#introduction) — Kolavi et al., October 1, 2026 · Interactive guide and experiment. Trains coding agents across existing harnesses using an OpenEnv capture proxy for exact tokens and log probabilities, Harbor for tasks and sandboxes, and TRL for optimization. Reports LFM2.5-2.6B pass@1 rising from 42.2% to 54.2% across four harnesses on SmolDataEnvs; the study uses one task family and one seed per setup.
 
